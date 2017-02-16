@@ -1,2 +1,3 @@
-﻿# ATAR
-דודה שלי קנה סוזוקי סרחה
+﻿#ATAR
+(Pornhub.com == Daddy issues solver)
+(xnxx.com == life )
