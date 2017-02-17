@@ -1,4 +1,4 @@
-﻿body {
+body {
     background-repeat: no-repeat;
     background-position-x: 50%;
     background-position-y: 400px;
@@ -267,5 +267,35 @@ hr.hr {
 }
 
     #signupbut:hover {
+        background-color: #BDBDBD;
+}
+#register{
+    text-align:center;
+}
+#userbox {
+    border: none;
+    background-color: #E0E0E0;
+    margin-top: 5px;
+}
+#passbox {
+    border: none;
+    margin-top:5px;
+    background-color: #E0E0E0;
+}
+#passboxcon {
+    border: none;
+    background-color: #E0E0E0;
+    margin-top: 5px;
+}
+#subbut {
+    margin-top: 0.5%;
+    height: 30px;
+    width: 100px;
+    color: white;
+    border: none;
+    background-color: #616161;
+    cursor: pointer;
+}
+    #subbut:hover {
         background-color: #BDBDBD;
     }
