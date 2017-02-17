@@ -5,13 +5,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="Server">
     <div id="login">
         <form action="FindUS.aspx">
-            <input id="usernamebox" type="text" placeholder="    Username" onclick="garry" tabindex="0" />
+            <input id="usernamebox" type="text" placeholder="    Username"  tabindex="1" />
             <br />
-            <input id="passwordbox" type="password" placeholder="    Password" tabindex="1" />
+            <input id="passwordbox" type="password" placeholder="    Password" tabindex="2" />
             <br />
-            <button id="loginbut" onclick="loginclick" tabindex="2">Login</button>
-            <a id="signupbut" href="Register_Page.aspx" tabindex="3">Sign Up</a>
-        </form>
+            <button id="loginbut" onclick="regexcheck();" tabindex="3">Login</button>
+            <a id="signupbut" href="Register_Page.aspx" tabindex="4">Sign Up</a>
+        </form> 
          
     </div>
 </asp:Content>
