@@ -62,7 +62,7 @@ p.Pregraph {
     }
 
 
-a.Headline:hover {
+a.Headline:hover:not(#LinkButton1) {
     background-color: #817d7d;
 }
 
@@ -70,22 +70,24 @@ a:visited {
     color: #564949;
 }
 
-a:link {
+a:link:not(#LinkButton1) {
     text-decoration: none;
     color: black;
 }
 
-a:hover {
+.Menu a:hover {
     text-shadow: 0 0 0.6px;
     color: #673434;
     text-decoration: none;
     font-size: 41px;
 }
 
-a.ReadVideo:hover {
+a.ReadVideo:hover:not(#LinkButton1) {
     color: dodgerblue;
     font-size: 21px;
 }
+
+
 
 img.Network {
     width: 70px;
@@ -175,14 +177,6 @@ h3#All {
     font-size: 20px;
 }
 
-p#Allp {
-    /*text-align: center;
-    
-    font-family: 'Russo One', sans-serif;
-    font-size: 20px;
-    width: 780px;*/
-}
-
 input.textbox1 {
     border-width: 3PX;
     width: 170px;
@@ -204,37 +198,74 @@ hr.hr {
     border-width: 0.1px;
 }
 
-input#usernamebox {
-    position: fixed;
-    top: 26%;
-    left: 44%;
+#social {
+    position: sticky;
 }
 
-input#passwordbox {
-    position: fixed;
-    top: 29%;
-    left: 44%;
+    #social .NetworkH {
+        position: absolute;
+        padding-top: 150px;
+        bottom: 0px;
+    }
+
+    #social .Network {
+        position: absolute;
+        padding-top: 8%;
+    }
+    #social .Network2 {
+        position: absolute;
+        padding-top: 8%;
+    }
+
+    #social .Network3 {
+        position: absolute;
+        padding-top: 8%;
+    }
+
+    #social .Network4 {
+        position: absolute;
+        padding-top: 8%;
+    }
+
+#login {
+    text-align:center;
+}
+#usernamebox {
+    margin-top: 1%;
+    height: 30px;
+    border: none;
+    background-color: #E0E0E0;
+}
+
+#passwordbox {
+    margin-top: 0.5%;
+    height: 30px;
+    border: none;
+    background-color: #E0E0E0;
 }
 
 #loginbut {
-    position: fixed;
-    top: 27.5%;
-    left: 54%;
-    height: 3.5%;
-}
-
-button#loginbut {
-    font-family: 'Russo one';
-    background-color: #cc0000;
-    border: none;
+    margin-top: 0.5%;
+    height: 30px;
+    width: 100px;
     color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    border: none;
+    background-color: #616161;
+    cursor:pointer;
+}
+    #loginbut:hover {
+        background-color: #BDBDBD;
+    }
+#signupbut {
+    margin-top: 0.5%;
+    height: 30px;
+    width: 100px;
+    color: white;
+    border: none;
+    background-color: #616161;
+    cursor: pointer;
 }
 
-    button#loginbut:hover {
-        background-color: #ff0000;
+    #signupbut:hover {
+        background-color: #BDBDBD;
     }

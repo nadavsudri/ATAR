@@ -3,10 +3,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="Server">
-    <form action="FindUS.aspx">
-        <input id="usernamebox" type="text" placeholder="Username" onclick="garry" />
-        <input id="passwordbox" type="password" placeholder="Password" />
-        <button id="loginbut" onclick="loginclick">Login</button>
-    </form>
+    <div id="login">
+        <form action="FindUS.aspx">
+            <input id="usernamebox" type="text" placeholder="    Username" onclick="garry" tabindex="0" />
+            <br />
+            <input id="passwordbox" type="password" placeholder="    Password" tabindex="1" />
+            <br />
+            <button id="loginbut" onclick="loginclick" tabindex="2">Login</button>
+            <button id="signupbut" onclick="loginclick" tabindex="3">Sign Up</button>
+        </form>
+
+    </div>
 </asp:Content>
 
