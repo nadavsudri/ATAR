@@ -9,6 +9,9 @@
             return false;
         }
     }
-
+  function openregisterpage() {
+        window.location.href = '#';
+        document.alert("hey");
+    }
 
 }
