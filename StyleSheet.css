@@ -1,216 +1,230 @@
-﻿body { background-repeat:no-repeat;
-   background-position-x:50%;
-   background-position-y:400px;
-   background-size:contain;
-   background-size:800px;
-   
-
-   
+﻿body {
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 400px;
+    background-size: contain;
+    background-size: 800px;
 }
-h1
-{
-    font-family:'Permanent Marker', cursive;
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
     font-size: 85px;
-    text-align:center;
-
+    text-align: center;
 }
 
-.Update-zone
-{
-    width:270px;
-    border-style:solid;
-    border-width:3px;
-   
- 
-    
+.Update-zone {
+    width: 270px;
+    border-style: solid;
+    border-width: 3px;
 }
 
 
-.Headline
-{
-    color:black;
-    
+.Headline {
+    color: black;
 }
-a.Headline
-{
-color:black;
+
+a.Headline {
+    color: black;
 }
-h3
-{
-    font-family:'Orbitron', sans-serif;
-    font-size:30px;
+
+h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
 }
-p.Pregraph
-{
-    font-family:'Russo One', sans-serif;
+
+p.Pregraph {
+    font-family: 'Russo One', sans-serif;
     /*border-style:solid;*/
     /*border-width: 2px;*/
-    font-size:20px;
-
-    
+    font-size: 20px;
 }
 
-.ReadVideo
-
-{
-    
+.ReadVideo {
 }
-.Menu
-{
+
+.Menu {
     font-family: 'Chewy', cursive;
-    font-size:40px;
-   display:block;
-   border-radius:1000%;
- text-align:center;
-    position:fixed;top:155px; left:550px;
-    text-decoration:none;
-
-}
-.Menu #ts{
-        padding-left:10px;
-}
-.Menu #fu{
-        padding-left:20px;
-}
-.Menu #ma7x{
-        padding-left:30px;
+    font-size: 40px;
+    left: 30%;
+    text-decoration: none;
 }
 
+    .Menu #ts {
+        padding-left: 10px;
+    }
 
-a.Headline:hover
-{
-    background-color:#817d7d;
-}
-a:visited
-{
-    color:#564949;
+    .Menu #fu {
+        padding-left: 20px;
+    }
+
+    .Menu #ma7x {
+        padding-left: 30px;
+    }
+
+
+a.Headline:hover {
+    background-color: #817d7d;
 }
 
-a:link
-{
-    text-decoration:none;
-    color:black;
+a:visited {
+    color: #564949;
 }
-a:hover
-{
-    text-shadow:0 0 0.6px;
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-shadow: 0 0 0.6px;
+    color: #673434;
+    text-decoration: none;
+    font-size: 41px;
+}
+
+a.ReadVideo:hover {
+    color: dodgerblue;
+    font-size: 21px;
+}
+
+img.Network {
+    width: 70px;
+    position: fixed;
+    top: 270px;
+    left: 660px;
+}
+
+    img.Network:hover {
+        width: 75px;
+    }
+
+img.Network2 {
+    width: 90px;
+    position: fixed;
+    top: 260px;
+    left: 810px;
+}
+
+    img.Network2:hover {
+        width: 100px;
+    }
+
+img.Network3 {
+    position: fixed;
+    top: 265px;
+    left: 980px;
+    width: 75px;
+}
+
+    img.Network3:hover {
+        width: 80px;
+    }
+
+img.Network4 {
+    width: 75px;
+    position: fixed;
+    top: 265px;
+    left: 1130px;
+}
+
+    img.Network4:hover {
+        width: 80px;
+    }
+
+h3.NetworkH {
+    font-family: 'Russo One', sans-serif;
+    font-size: 23px;
+    position: fixed;
+    top: 200px;
+    left: 630px;
+}
+
+iframe.HomeVideo {
+    position: fixed;
+    top: 150px;
+    left: 1400px;
+    border-width: 4px;
+}
+
+iframe.HomeVideo2 {
+    position: fixed;
+    top: 450px;
+    left: 1400px;
+    border-width: 4px;
+}
+
+iframe.FindVideo1 {
+    border-width: 4px;
+    margin:auto;
+    position:static;
+}
+
+h3#All {
+    text-align: center;
+    padding-top: 20%;
+    padding-right: 4%;
+}
+
+#pardiv {
+    text-align: center;
+    width: 25%;
+    margin: auto;
+    font-family: 'Russo One', sans-serif;
+    padding-right: 4%;
+    padding-top:5%;
+    font-size: 20px;
+}
+
+p#Allp {
+    /*text-align: center;
     
-    color:#673434;
-    text-decoration:none;
-    font-size:41px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    width: 780px;*/
 }
-a.ReadVideo:hover{
-    color:dodgerblue;
-    font-size:21px;
-}
-img.Network{
-    width:70px;
-   position:fixed; top:270px; left:660px;
-      
-}
-img.Network:hover
-{
-    width:75px;
-}
-img.Network2
-{
-       width:90px;
-   position:fixed; top:260px; left:810px;
 
+input.textbox1 {
+    border-width: 3PX;
+    width: 170px;
+    height: 20px;
+    border-color: #562e2e;
+    fill: ActiveBorder;
 }
-img.Network2:hover
-{
-    width:100px;
-}
-img.Network3
-{
- position:fixed; top:265px; left:980px;
- width:75px;
-}
-img.Network3:hover
-{
-    width:80px;
-}
-img.Network4{
-    width:75px;
-     position:fixed; top:265px; left:1130px;
-}
-img.Network4:hover
-{
-    width:80px;
-}
-h3.NetworkH{
-    font-family:'Russo One', sans-serif;
-    font-size:23px;
-    position:fixed; top:200px; left:630px;
-}
-iframe.HomeVideo{
-    position:fixed; top :150px; left:1400px;
-    border-width:4px;
-}
-iframe.HomeVideo2{
-     position:fixed; top :450px; left:1400px;
-     border-width:4px;
-}
-iframe.FindVideo1
-{
-     position:fixed; top :670px; left:700px;
-      border-width:4px;
-}
-h3#All
-{
-    position:fixed;top:180px;left:850px;
-}
-p#Allp{
-     position:fixed;top:240px;left:580px;
-     font-family:'Russo One', sans-serif;
-     font-size:20px;
-     width:780px;
 
+div.Line {
+    width: 12px;
+    height: 100%;
+    background-color: black;
 }
-input.textbox1
-{
-    
-    border-width:3PX;
-    width:170px;
-    height:20px;
 
-    border-color:#562e2e; fill:ActiveBorder;
-}
-div.Line{
-width:12px;
-height:100%;
-background-color:black;
-}hr.hr
- {
-    
-    width:0.1%;
-    display:inline-block;
-
-    height:100%;
+hr.hr {
+    width: 0.1%;
+    display: inline-block;
+    height: 100%;
     border-width: 0.1px;
+}
 
- }
- 
-input#usernamebox{
-   position:fixed;
-   top:26%;
-   left:44%;
+input#usernamebox {
+    position: fixed;
+    top: 26%;
+    left: 44%;
 }
+
 input#passwordbox {
-    position:fixed;
-    top:29%;
-   left:44%; 
+    position: fixed;
+    top: 29%;
+    left: 44%;
 }
-#loginbut{
-    position:fixed;
-    top:27.5%;
-   left:54%;
-   height:3.5%; 
+
+#loginbut {
+    position: fixed;
+    top: 27.5%;
+    left: 54%;
+    height: 3.5%;
 }
-button#loginbut
-{
-    font-family:'Russo one';
+
+button#loginbut {
+    font-family: 'Russo one';
     background-color: #cc0000;
     border: none;
     color: white;
@@ -220,11 +234,7 @@ button#loginbut
     display: inline-block;
     font-size: 16px;
 }
-button#loginbut:hover
-{
-     background-color: #ff0000;
-}
 
-
-
-    
+    button#loginbut:hover {
+        background-color: #ff0000;
+    }
