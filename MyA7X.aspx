@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="MyA7X.aspx.cs" Inherits="MyA7X" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="MyA7X.aspx.cs" Inherits="MyA7X" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
@@ -10,9 +10,9 @@
             <input id="passwordbox" type="password" placeholder="    Password" tabindex="1" />
             <br />
             <button id="loginbut" onclick="loginclick" tabindex="2">Login</button>
-            <button id="signupbut" onclick="loginclick" tabindex="3">Sign Up</button>
+            <a id="signupbut" href="Register_Page.aspx" tabindex="3">Sign Up</a>
         </form>
-
+         
     </div>
 </asp:Content>
 
