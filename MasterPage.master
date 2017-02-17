@@ -6,44 +6,43 @@
 <head runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avenged Sevenfold</title>
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"/>
-    <link href="StyleSheet.css" rel="stylesheet" type ="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" />
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet" />
     <link rel="icon" href="https://pbs.twimg.com/profile_images/542780788400345088/6C-gB4zW.jpeg">
     <script src="JavaScript.js"></script>
-    <asp:ContentPlaceHolder id="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body background ="http://avengedsevenfold.com/app/uploads/2016/10/logo-1.png">
+<body background="http://avengedsevenfold.com/app/uploads/2016/10/logo-1.png">
 
-   <div class =" Headline">
-        <a href="HomePage.aspx"><h1 >Avenged Sevenfold</h1></a>
-   
-     <div align="center" class ="Menu">
-               
-         <a id="atb" href ="About Us.aspx" > About the Band </a>
-         <a id="ts" href="TopsSongs.aspx">Top Songs</a>
-         <a id="fu" href="FindUS.aspx">Find Us</a>
-         <a id="ma7x" href="MyA7X.aspx">My A7X</a>
-         </div>
-            <div class="Line">
-             
-            </div>
-         <div class="Line2">
+    <div class=" Headline">
+        <a href="HomePage.aspx">
+            <h1>Avenged Sevenfold</h1>
+        </a>
 
-            </div>
-           
-       
+        <div align="center" class="Menu">
+
+            <a id="atb" href="About Us.aspx">About the Band </a>
+            <a id="ts" href="TopsSongs.aspx">Top Songs</a>
+            <a id="fu" href="FindUS.aspx">Find Us</a>
+            <a id="ma7x" href="MyA7X.aspx">My A7X</a>
+        </div>
+        <div class="Line">
+        </div>
+        <div class="Line2">
+        </div>
+
+
     </div>
-     
+
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder id="Body" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+        <div>
+            <asp:ContentPlaceHolder ID="Body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
     </form>
 </body>
 </html>

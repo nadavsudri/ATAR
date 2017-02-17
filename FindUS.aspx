@@ -9,7 +9,7 @@
     <a href="https://www.instagram.com/avengedsevenfold/"><img class =" Network2" src="http://www.clipartkid.com/images/21/instagram-camera-logo-black-clipart-panda-free-clipart-images-yNArw0-clipart.png"/></a>
 <a href="https://he.wikipedia.org/wiki/Avenged_Sevenfold"><img class="Network3" src="http://img.freepik.com/free-icon/wikipedia-logo_318-65113.jpg?size=338&ext=jpg"/></a>
     <a href="https://twitter.com/theofficiala7x"><img class="Network4" src="https://image.freepik.com/free-icon/twitter-logo_318-40209.jpg" /></a>
-
+    
 </asp:Content>
 
 

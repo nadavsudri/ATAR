@@ -155,8 +155,8 @@ iframe.HomeVideo2 {
 
 iframe.FindVideo1 {
     border-width: 4px;
-    margin:auto;
-    position:static;
+    margin: auto;
+    position: static;
 }
 
 h3#All {
@@ -171,7 +171,7 @@ h3#All {
     margin: auto;
     font-family: 'Russo One', sans-serif;
     padding-right: 4%;
-    padding-top:5%;
+    padding-top: 5%;
     font-size: 20px;
 }
 
