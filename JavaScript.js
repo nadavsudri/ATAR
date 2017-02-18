@@ -1,17 +1,14 @@
 ﻿{
-    function loginclick() {
-        document.alert("tal=fag");
-        var nameRegex = /^[a-zA-Z\-]+$/;
-        var validfirstUsername = document.frm.firstName.value.match(nameRegex);
-        if (validUsername == null) {
-            alert("Your first name is not valid. Only characters A-Z, a-z and '-' are  acceptable.");
-            document.frm.firstName.focus();
-            return false;
-        }
+    function login(){
+        localStorage.setItem("islogged", "t");
     }
-  function openregisterpage() {
-        window.location.href = '#';
-        document.alert("hey");
+    function checklogin() {
+        if (localStorage.getItem("islogged") == "t") {
+            alert("Logged");
+        }
+        else {
+            alert("no");
+        }
     }
 
     function regexcheck() {

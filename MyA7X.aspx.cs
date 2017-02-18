@@ -23,6 +23,7 @@ public partial class MyA7X : System.Web.UI.Page
             usernames = users.AsEnumerable().Select(x => x[1].ToString()).ToList();//list of all usernames
             passwords = users.AsEnumerable().Select(x => x[2].ToString()).ToList();//list of all passwords       
         }
+        Page.ClientScript.RegisterStartupScript(this.GetType(), "MyKey", "checklogin();", true);
     }
 
     protected void loginbut_ServerClick(object sender, EventArgs e)
@@ -42,6 +43,8 @@ public partial class MyA7X : System.Web.UI.Page
             if (passwords[i]==passwordbox.Value)
             {
                 Alert("Logged In");
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "MyKey", "login();", true);
+                 
             }
         }
     }
