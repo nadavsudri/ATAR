@@ -12,5 +12,5 @@
         <br />
         <input id="subbut" type="submit" value="Register" />
     </div>
-</asp:Content>
+</asp:Content> 
 
