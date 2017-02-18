@@ -278,21 +278,24 @@ hr.hr {
 }
 
 #userbox {
+    margin-top: 1%;
+    height: 30px;
     border: none;
     background-color: #E0E0E0;
-    margin-top: 5px;
 }
 
 #passbox {
+    margin-top: 0.5%;
+    height: 30px;
     border: none;
-    margin-top: 5px;
     background-color: #E0E0E0;
 }
 
 #passboxcon {
+    margin-top: 0.5%;
+    height: 30px;
     border: none;
     background-color: #E0E0E0;
-    margin-top: 5px;
 }
 
 #subbut {

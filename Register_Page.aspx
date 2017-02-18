@@ -4,13 +4,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="Server">
     <div id="register">
-        <input id="userbox" type="text" placeholder="Username" runat="server" />
+        <input id="userbox" type="text" placeholder="Username" runat="server" ClientIDMode="Static" />
         <br />
-        <input id="passbox" type="password" placeholder="Password" runat="server" title="A password requires, at least one uppercase letter, a lowercase letter, and a digit" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[0-9a-zA-Z!-+]{8,}" />
+        <input id="passbox" ClientIDMode="Static" type="password" placeholder="Password" runat="server" title="A password requires, at least one uppercase letter, a lowercase letter, and a digit" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[0-9a-zA-Z!-+]{8,}"  />
         <br />
-        <input id="passboxcon" type="password" placeholder="Confirm Password" runat="server" />
+        <input id="passboxcon" type="password" ClientIDMode="Static" placeholder="Confirm Password" runat="server" />
         <br />
-        <input id="subbut" type="submit" value="Register" runat="server" onserverclick="subbut_ServerClick" />
+        <input id="subbut" type="submit" value="Register" ClientIDMode="Static" runat="server" onserverclick="subbut_ServerClick"  />
+
     </div>
 </asp:Content>
 

@@ -33,6 +33,10 @@ public partial class Default2 : System.Web.UI.Page
         string passwordconfirm = passboxcon.Value;
         Regex regex = new Regex(@"(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[0-9a-zA-Z!-+]{8,}");
         Match match = regex.Match(password);
+        if (username==null||password==null)
+        {
+            Alert("All Fields must be filled");
+        }
         if (usernames.Contains(username))
         {
             Alert("Username is already taken!");
