@@ -33,30 +33,33 @@ public partial class Default2 : System.Web.UI.Page
         string passwordconfirm = passboxcon.Value;
         Regex regex = new Regex(@"(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[0-9a-zA-Z!-+]{8,}");
         Match match = regex.Match(password);
-
-        if (match.Success)
+        if (usernames.Contains(username))
         {
-            if (password == passwordconfirm)
-            {
-                string query = string.Format("INSERT INTO [Table] (username,password) VALUES ('{0}','{1}');", username, password);
-                string connectionstring = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
-                using (SqlConnection connection = new SqlConnection(connectionstring))
-                using (SqlCommand command = new SqlCommand(query, connection))
-                using (SqlDataAdapter adapter = new SqlDataAdapter(command))
-                {
-                    connection.Open();
-                    command.ExecuteNonQuery();
-                }
-                Alert("Registered");
-            }
-            else
-            {
-                Alert("Passwords have to match");
-            }
-
+            Alert("Username is already taken!");
         }
-
-
+        else
+        {
+            if (match.Success)
+            {
+                if (password == passwordconfirm)
+                {
+                    string query = string.Format("INSERT INTO [Table] (username,password) VALUES ('{0}','{1}');", username, password);
+                    string connectionstring = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
+                    using (SqlConnection connection = new SqlConnection(connectionstring))
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        connection.Open();
+                        command.ExecuteNonQuery();
+                    }
+                    Alert("Registered");
+                }
+                else
+                {
+                    Alert("Passwords have to match");
+                }
+            }
+        }
     }
     private void Alert(string message)
     {

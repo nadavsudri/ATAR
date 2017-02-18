@@ -1,4 +1,5 @@
-body {
+﻿
+השיחה נפתחה. הודעה אחת שלא נקראה. דלג לתוכן שימוש ב-Gmail עם קוראי מסך חיפוש Gmail כתוב הודעה תוויות דואר נכנס ‏(13,472)‏ מסומן בכוכב חשוב צ'אט דואר יוצא טיוטות ‏(33)‏ כל הדואר ספאם ‏(41)‏ אשפה מעגלים אישי נסיעות עבודה קבלות עוד Hangouts עוד 1 מתוך 14, 167 הדפס הכל בחלון חדש stylesheet‏ דואר נכנס x Eilin Demidov‏ קבצים מצורפים11:11 (לפני 2 דקות) אני אזור קבצים מצורפים לחץ כאן כדי להשיב או להעביר 1.47 GB‏ (%9) מתוך 15 GB נמצאים בשימוש נהל תנאים - פרטיות פעילות אחרונה בחשבון: לפני יומיים פרטים Eilin Demidov הוסף למעגלים הצג פרטים body {
     background-repeat: no-repeat;
     background-position-x: 50%;
     background-position-y: 400px;
@@ -91,9 +92,9 @@ a.ReadVideo:hover:not(#LinkButton1) {
 
 img.Network {
     width: 70px;
-    position: fixed;
+    position: center; /*changed fixed to center*/
     top: 270px;
-    left: 660px;
+    left: 40%;
 }
 
     img.Network:hover {
@@ -102,9 +103,9 @@ img.Network {
 
 img.Network2 {
     width: 90px;
-    position: fixed;
+    position: center; /*changed fixed to center*/
     top: 260px;
-    left: 810px;
+    left: 45%;
 }
 
     img.Network2:hover {
@@ -112,9 +113,9 @@ img.Network2 {
     }
 
 img.Network3 {
-    position: fixed;
+    position: center; /*changed fixed to center*/
     top: 265px;
-    left: 980px;
+    left: 50%;
     width: 75px;
 }
 
@@ -124,9 +125,9 @@ img.Network3 {
 
 img.Network4 {
     width: 75px;
-    position: fixed;
+    position: fixed; /*changed fixed to center*/
     top: 265px;
-    left: 1130px;
+    left: 55%;
 }
 
     img.Network4:hover {
@@ -136,9 +137,7 @@ img.Network4 {
 h3.NetworkH {
     font-family: 'Russo One', sans-serif;
     font-size: 23px;
-    position: fixed;
-    top: 200px;
-    left: 630px;
+    text-align: center;
 }
 
 iframe.HomeVideo {
@@ -212,6 +211,7 @@ hr.hr {
         position: absolute;
         padding-top: 8%;
     }
+
     #social .Network2 {
         position: absolute;
         padding-top: 8%;
@@ -228,8 +228,9 @@ hr.hr {
     }
 
 #login {
-    text-align:center;
+    text-align: center;
 }
+
 #usernamebox {
     margin-top: 1%;
     height: 30px;
@@ -251,11 +252,13 @@ hr.hr {
     color: white;
     border: none;
     background-color: #616161;
-    cursor:pointer;
+    cursor: pointer;
 }
+
     #loginbut:hover {
         background-color: #BDBDBD;
     }
+
 #signupbut {
     margin-top: 0.5%;
     height: 30px;
@@ -268,25 +271,30 @@ hr.hr {
 
     #signupbut:hover {
         background-color: #BDBDBD;
+    }
+
+#register {
+    text-align: center;
 }
-#register{
-    text-align:center;
-}
+
 #userbox {
     border: none;
     background-color: #E0E0E0;
     margin-top: 5px;
 }
+
 #passbox {
     border: none;
-    margin-top:5px;
+    margin-top: 5px;
     background-color: #E0E0E0;
 }
+
 #passboxcon {
     border: none;
     background-color: #E0E0E0;
     margin-top: 5px;
 }
+
 #subbut {
     margin-top: 0.5%;
     height: 30px;
@@ -296,6 +304,9 @@ hr.hr {
     background-color: #616161;
     cursor: pointer;
 }
+
     #subbut:hover {
         background-color: #BDBDBD;
     }
+
+StyleSheet.css פתח עם מציג את StyleSheet.css.
