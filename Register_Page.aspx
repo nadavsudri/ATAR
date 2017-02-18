@@ -3,6 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="Server">
+  
     <div id="register">
         <input id="userbox" type="text" placeholder="Username" runat="server"/>
         <br />
