@@ -23,12 +23,6 @@ public partial class MyA7X : System.Web.UI.Page
             usernames = users.AsEnumerable().Select(x => x[1].ToString()).ToList();//list of all usernames
             passwords = users.AsEnumerable().Select(x => x[2].ToString()).ToList();//list of all passwords       
         }
-        if (Session["log"]=="t")
-        {
-           
-
-        }
-        //Alert(usernames[1] + " - " + passwords[1]);
     }
 
     protected void loginbut_ServerClick(object sender, EventArgs e)
@@ -39,7 +33,7 @@ public partial class MyA7X : System.Web.UI.Page
             if (passwords[index] == passwordbox.Value) 
             {
                 Alert("Logged In");
-                Session["log"] = "t";
+                Session["log"] = "loged";
             }
 
         }
