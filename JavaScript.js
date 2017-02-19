@@ -4,10 +4,10 @@
     }
     function checklogin() {
         if (localStorage.getItem("islogged") == "t") {
-            alert("Logged");
+           
         }
         else {
-            alert("no");
+            alert("not logged");
         }
     }
 

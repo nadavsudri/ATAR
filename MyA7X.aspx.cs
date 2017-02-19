@@ -40,13 +40,14 @@ public partial class MyA7X : System.Web.UI.Page
         }
         if (found)
         {
-            if (passwords[i]==passwordbox.Value)
+            if (passwords[i-1]==passwordbox.Value)
             {
                 Alert("Logged In");
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "MyKey", "login();", true);
                  
-            }
+            }        
         }
+        
     }
     private void Alert(string message)
     {
