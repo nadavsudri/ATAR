@@ -14,37 +14,42 @@ public partial class MyA7X : System.Web.UI.Page
     private List<string> passwords;
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["Log"] == "logged")
+        if (Session.Count != 0)
         {
-            //user is already logged in, redirect to another page 
-        }
-        else// user needs to log into the website
-        {
-            string connectionstring = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
-            using (SqlConnection connection = new SqlConnection(connectionstring))
-            using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM [Table];", connection))
+            if (Session["Log"].ToString()[0] == 't')
             {
-                DataTable users = new DataTable();
-                adapter.Fill(users);
-                usernames = users.AsEnumerable().Select(x => x[1].ToString()).ToList();//list of all usernames
-                passwords = users.AsEnumerable().Select(x => x[2].ToString()).ToList();//list of all passwords       
+                //user is already logged in, redirect to another page 
+                Response.Redirect("AfterLogPage.aspx");
             }
         }
+        // user needs to log into the website
+
+        string connectionstring = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
+        using (SqlConnection connection = new SqlConnection(connectionstring))
+        using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM [Table];", connection))
+        {
+            DataTable users = new DataTable();
+            adapter.Fill(users);
+            usernames = users.AsEnumerable().Select(x => x[1].ToString()).ToList();//list of all usernames
+            passwords = users.AsEnumerable().Select(x => x[2].ToString()).ToList();//list of all passwords       
+        }
     }
+
 
     protected void loginbut_ServerClick(object sender, EventArgs e)
     {
         if (usernames.Contains(usernamebox.Value))
         {
             int index = usernames.IndexOf(usernamebox.Value);
-            if (passwords[index] == passwordbox.Value) 
+            if (passwords[index] == passwordbox.Value)
             {
                 Alert("Logged In");
-                Session["log"] = "logged";
+                Session["log"] = "t" + usernamebox.Value;
+                Response.Redirect("AfterLogPage.aspx");
             }
 
         }
-        
+
     }
     protected void redirecttosignup(object sender, EventArgs e)
     {

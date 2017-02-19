@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet" />
     <link rel="icon" href="https://pbs.twimg.com/profile_images/542780788400345088/6C-gB4zW.jpeg">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <script src="JavaScript.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>

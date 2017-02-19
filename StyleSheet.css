@@ -40,8 +40,6 @@ p.Pregraph {
     font-size: 20px;
 }
 
-.ReadVideo {
-}
 
 .Menu {
     font-family: 'Chewy', cursive;
@@ -311,5 +309,24 @@ hr.hr {
     #subbut:hover {
         background-color: #BDBDBD;
     }
-
+#afheader {
+    font-family: 'Oswald', sans-serif;
+    font-size:50px;
+}
+#logoutbtn {
+    border-radius: 10%;
+    border: none;
+    background-color: #424242;
+    margin-top: 20px;
+    color: white;
+    width: 150px;
+    font-size: 28px;
+}
+#tnxp {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 15%;
+    font-family: 'Indie Flower', cursive;
+   
+}
 
