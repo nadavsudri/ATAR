@@ -9,8 +9,7 @@
             <input id="passwordbox" type="password" runat="server" placeholder="    Password" tabindex="2" ClientIDMode="Static" />
             <br />
             <button id="loginbut" onserverclick="loginbut_ServerClick" runat="server" tabindex="3" ClientIDMode="Static" >Login</button>
-            <button id="signupbut" runat="server" tabindex="4" clientidmode="Static"><a href="Register_Page.aspx">Sign Up</a> </button>
-        <h1 id="abc">Nahum</h1>
+            <button id="signupbut" onserverclick="redirecttosignup" runat="server" tabindex="4" clientidmode="Static">Sign Up </button>
     </div>
 </asp:Content>
 

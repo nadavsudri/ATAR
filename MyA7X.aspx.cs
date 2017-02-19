@@ -23,31 +23,31 @@ public partial class MyA7X : System.Web.UI.Page
             usernames = users.AsEnumerable().Select(x => x[1].ToString()).ToList();//list of all usernames
             passwords = users.AsEnumerable().Select(x => x[2].ToString()).ToList();//list of all passwords       
         }
-        Page.ClientScript.RegisterStartupScript(this.GetType(), "MyKey", "checklogin();", true);
+        if (Session["log"]=="t")
+        {
+           
+
+        }
+        //Alert(usernames[1] + " - " + passwords[1]);
     }
 
     protected void loginbut_ServerClick(object sender, EventArgs e)
     {
-        bool found = false;
-        int i=0;
-        for (i = 0; i < usernames.Count; i++)
+        if (usernames.Contains(usernamebox.Value))
         {
-            if (usernames[i]==usernamebox.Value)
-            {
-                found = true;
-                break;
-            }
-        }
-        if (found)
-        {
-            if (passwords[i-1]==passwordbox.Value)
+            int index = usernames.IndexOf(usernamebox.Value);
+            if (passwords[index] == passwordbox.Value) 
             {
                 Alert("Logged In");
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "MyKey", "login();", true);
-                 
-            }        
+                Session["log"] = "t";
+            }
+
         }
         
+    }
+    protected void redirecttosignup(object sender, EventArgs e)
+    {
+        Response.Redirect("Register_Page.aspx");
     }
     private void Alert(string message)
     {
