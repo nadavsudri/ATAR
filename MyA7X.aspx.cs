@@ -14,14 +14,21 @@ public partial class MyA7X : System.Web.UI.Page
     private List<string> passwords;
     protected void Page_Load(object sender, EventArgs e)
     {
-        string connectionstring = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
-        using (SqlConnection connection = new SqlConnection(connectionstring))
-        using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM [Table];", connection))
+        if (Session["Log"] == "logged")
         {
-            DataTable users = new DataTable();
-            adapter.Fill(users);
-            usernames = users.AsEnumerable().Select(x => x[1].ToString()).ToList();//list of all usernames
-            passwords = users.AsEnumerable().Select(x => x[2].ToString()).ToList();//list of all passwords       
+            //user is already logged in, redirect to another page 
+        }
+        else// user needs to log into the website
+        {
+            string connectionstring = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionstring))
+            using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM [Table];", connection))
+            {
+                DataTable users = new DataTable();
+                adapter.Fill(users);
+                usernames = users.AsEnumerable().Select(x => x[1].ToString()).ToList();//list of all usernames
+                passwords = users.AsEnumerable().Select(x => x[2].ToString()).ToList();//list of all passwords       
+            }
         }
     }
 
@@ -33,7 +40,7 @@ public partial class MyA7X : System.Web.UI.Page
             if (passwords[index] == passwordbox.Value) 
             {
                 Alert("Logged In");
-                Session["log"] = "loged";
+                Session["log"] = "logged";
             }
 
         }
