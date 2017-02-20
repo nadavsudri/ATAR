@@ -1,5 +1,6 @@
 ﻿body {
     background-repeat: no-repeat;
+    background-image: url('Img/logo.png');
     background-position-x: 50%;
     background-position-y: 400px;
     background-size: contain;
