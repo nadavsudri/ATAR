@@ -16,7 +16,7 @@ public partial class MyA7X : System.Web.UI.Page
     {
         if (Session.Count != 0)
         {
-            if (Session["Log"].ToString()[0] == 't')
+            if (Session["Log"]!=null)
             {
                 //user is already logged in, redirect to another page 
                 Response.Redirect("AfterLogPage.aspx");
@@ -44,7 +44,7 @@ public partial class MyA7X : System.Web.UI.Page
             if (passwords[index] == passwordbox.Value)
             {
                 Alert("Logged In");
-                Session["log"] = "t" + usernamebox.Value;
+                Session["log"] = usernamebox.Value;
                 Response.Redirect("AfterLogPage.aspx");
             }
 

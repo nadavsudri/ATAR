@@ -1,17 +1,4 @@
-﻿{
-    function login(){
-        localStorage.setItem("islogged", "t");
-    }
-    function checklogin() {
-        if (localStorage.getItem("islogged") == "t") {
-           
-        }
-        else {
-            alert("not logged");
-        }
-    }
-
-    function regexcheck() {
+﻿    function regexcheck() {
 
         var username = document.getElementById("usernamebox").value;
         var password = document.getElementById("passwordbox").value;
@@ -24,6 +11,3 @@
             alert("Password must contain: \nAt least one upper case letter,\nOne lower case letter\nOne digit\nAtleast 8 characters long")
       }
   }
-
-    
-}

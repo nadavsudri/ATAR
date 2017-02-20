@@ -33,16 +33,34 @@ h3 {
     font-family: 'Orbitron', sans-serif;
     font-size: 30px;
 }
-#songlist{
+
+button.songbtn {
+    background:none;
+    border:none;
     font-family: 'Orbitron', sans-serif;
-    font-size: 20px;
-    font-weight:bolder;
-    padding-top: 300px;
+    font-size: 19px;
+    font-weight:bolder; 
+
+}
+#songlist{
+    
+    padding-top: 350px;
     text-shadow: 1.5px 1.5px #564949;
     text-align:left;
     line-height: 40px;
     margin: 0 auto;
     width: 700px;
+}
+
+button.songbtn:hover {
+    text-shadow: 0 0 0.6px;
+    color: #673434;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+iframe.FindVideo2 {
+    margin: auto 50px;
 }
 
 p.Pregraph {
@@ -169,6 +187,7 @@ iframe.FindVideo1 {
     margin: 0 auto;
     position: static;
 }
+
 
 h3#All {
     text-align: center;
