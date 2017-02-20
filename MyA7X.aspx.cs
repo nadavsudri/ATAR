@@ -47,9 +47,17 @@ public partial class MyA7X : System.Web.UI.Page
                 Session["log"] = usernamebox.Value;
                 Response.Redirect("AfterLogPage.aspx");
             }
-
+            else
+            {
+                goto al;   
+            }
         }
-
+        else
+        {
+            goto al;
+        }
+        al:
+        Alert("Incorrect login");
     }
     protected void redirecttosignup(object sender, EventArgs e)
     {

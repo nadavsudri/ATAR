@@ -9,8 +9,12 @@ public partial class AfterLogPage : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        string username = Session["log"].ToString();
-        afheader.InnerText = "Hello " + username ?? "You are not Logged in properly";      
+        try
+        {
+            string username = Session["log"].ToString();
+            afheader.InnerText = "Hello " + username ?? "You are not Logged in properly";
+        }
+        catch { Response.Redirect("MyA7X.aspx"); }
     }
 
     protected void logoutbtn_ServerClick(object sender, EventArgs e)
