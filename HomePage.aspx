@@ -15,6 +15,8 @@
            </marquee>
         <iframe class="HomeVideo" width="427" height="240" src="https://www.youtube.com/embed/dgzvl_Oa0w8" frameborder="0" allowfullscreen="false"></iframe>
         <iframe class="HomeVideo2" width="427" height="240" src="https://www.youtube.com/embed/EEGAeVEy5T4" frameborder="0" allowfullscreen></iframe>
-    </div>
+        </div>
+        <img id="image" src="Img/Avenged_Sevenfold.jpg" />
+    
 </asp:Content>
 
