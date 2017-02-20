@@ -28,7 +28,7 @@
         <div align="center" class="Menu">
 
             <a id="atb" href="About Us.aspx">About the Band </a>
-            <a id="ts" href="TopsSongs.aspx">Top Songs</a>
+            <a id="ts" href="TopSongs.aspx">Top Songs</a>
             <a id="fu" href="FindUS.aspx">Find Us</a>
             <a id="ma7x" href="MyA7X.aspx">My A7X</a>
         </div>

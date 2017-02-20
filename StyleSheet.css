@@ -1,5 +1,4 @@
-﻿
-body {
+﻿body {
     background-repeat: no-repeat;
     background-position-x: 50%;
     background-position-y: 400px;
@@ -31,6 +30,16 @@ a.Headline {
 h3 {
     font-family: 'Orbitron', sans-serif;
     font-size: 30px;
+}
+#songlist{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight:bolder;
+    text-shadow: 1.5px 1.5px #564949;
+    text-align:left;
+    line-height: 40px;
+    margin: 0 auto;
+    width: 700px;
 }
 
 p.Pregraph {
