@@ -57,6 +57,7 @@ public partial class Default2 : System.Web.UI.Page
                         command.ExecuteNonQuery();
                     }
                     Alert("Registered");
+                    Response.Redirect("MyA7X.aspx");
                 }
                 else
                 {

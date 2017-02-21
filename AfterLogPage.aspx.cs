@@ -12,7 +12,7 @@ public partial class AfterLogPage : System.Web.UI.Page
         try
         {
             string username = Session["log"].ToString();
-            afheader.InnerText = "Hello " + username ?? "You are not Logged in properly";
+            afheader.InnerText = "Hello " + username ??"You are not Logged in properly";
         }
         catch { Response.Redirect("MyA7X.aspx"); }
     }
