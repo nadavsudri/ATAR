@@ -371,4 +371,22 @@ hr.hr {
     font-family: 'Indie Flower', cursive;
    
 }
-
+#ImageDiv {
+    cursor: pointer;
+    width: 170px;
+}
+#ProfilePic {
+    height: 100px;
+    border-radius: 80%;
+    top: 200px;
+}
+#ppheader {
+    font-size: 18px;
+    position:relative;
+    color: #BDBDBD;
+    font-family: 'Oswald', sans-serif;
+    padding-left:10px;
+}
+#ppheader:hover {
+    color: #424242;
+}
