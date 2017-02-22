@@ -6,12 +6,13 @@
     <div id="ImageDiv" onclick="document.getElementById('FileUpload').click();">
         <h2 id="ppheader">Click To Edit</h2>
         <img src="http://www.propertybaazaar.com/images/noprofile.png" id="ProfilePic" />
-        <input type="file" id="FileUpload" style="display:none" />
+        <input type="file" id="FileUpload" style="display: none" />
     </div>
-    <header id="afheader" runat="server" clientidmode="Static">Hello User
+    <header id="afheader" runat="server" clientidmode="Static">
+        Hello User
         <br />
     </header>
     <button runat="server" onserverclick="logoutbtn_ServerClick" clientidmode="Static" id="logoutbtn">Log Out</button>
-    <p id="tnxp"> <strong>Thank you for using our website!</strong>  </p>
+    <p id="tnxp"><strong>Thank you for using our website!</strong>  </p>
 </asp:Content>
 
