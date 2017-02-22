@@ -2,6 +2,7 @@
     font-family: adler;
     src: url('adler.ttf');
 }
+
 body {
     background-repeat: no-repeat;
     background-color: #f5f5f5;
@@ -11,6 +12,7 @@ body {
     background-size: contain;
     background-size: 800px;
 }
+
 h1 {
     font-family: adler, cursive;
     font-size: 85px;
@@ -37,27 +39,26 @@ h3 {
     font-size: 30px;
 }
 
-#image{
+#image {
     margin: 0;
     margin-left: auto;
-	margin-right: auto;
-	display: block;
-    border-radius:19%;
+    margin-right: auto;
+    display: block;
+    border-radius: 19%;
 }
 
 button.songbtn {
-    background:none;
-    border:none;
+    background: none;
+    border: none;
     font-family: 'Orbitron', sans-serif;
     font-size: 19px;
-    font-weight:bolder; 
-
+    font-weight: bolder;
 }
-#songlist{
-    
+
+#songlist {
     padding-top: 350px;
     text-shadow: 1.5px 1.5px #564949;
-    text-align:left;
+    text-align: left;
     line-height: 40px;
     margin: 0 auto;
     width: 700px;
@@ -318,7 +319,7 @@ hr.hr {
     }
 
 #register {
-    text-align: center;  
+    text-align: center;
 }
 
 #userbox {
@@ -355,10 +356,12 @@ hr.hr {
     #subbut:hover {
         background-color: #BDBDBD;
     }
+
 #afheader {
     font-family: 'Oswald', sans-serif;
-    font-size:50px;
+    font-size: 50px;
 }
+
 #logoutbtn {
     border-radius: 10%;
     border: none;
@@ -368,29 +371,69 @@ hr.hr {
     width: 150px;
     font-size: 28px;
 }
+
 #tnxp {
     text-align: center;
     font-size: 60px;
     margin-top: 15%;
     font-family: 'Indie Flower', cursive;
-   
 }
+
 #ImageDiv {
     cursor: pointer;
     width: 170px;
 }
+
 #ProfilePic {
     height: 100px;
     border-radius: 80%;
     top: 200px;
 }
+
 #ppheader {
     font-size: 18px;
-    position:relative;
+    position: relative;
     color: #BDBDBD;
     font-family: 'Oswald', sans-serif;
-    padding-left:10px;
+    padding-left: 10px;
 }
-#ppheader:hover {
-    color: #424242;
+
+    #ppheader:hover {
+        color: #424242;
+    }
+
+#imagehovertext {
+    position: absolute;
+    font-family: 'Indie Flower', cursive;
+    top: 235px;
+    padding-left: 5px;
+    font-size: 18px;
+    color: #7a7a7a;
+}
+
+#uploaddiv {
+    visibility: hidden;
+    position: absolute;
+    width:400px;
+
+}
+
+#cancelbutton {
+    margin-top: 3px;
+    border: none;
+    background-color: #E0E0E0;
+    height: 30px;
+    cursor: pointer;
+}
+
+#uploadbutton {
+    border: none;
+    background-color: #E0E0E0;
+    height: 30px;
+    cursor: pointer;
+}
+#urlbox {
+    height: 30px;
+    border: none;
+    background-color: #E0E0E0;
 }
