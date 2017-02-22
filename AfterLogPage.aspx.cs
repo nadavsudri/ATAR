@@ -22,4 +22,10 @@ public partial class AfterLogPage : System.Web.UI.Page
         Session["log"] = null;
         Response.Redirect("MyA7X.aspx");
     }
+
+    protected void uploadbutton_ServerClick(object sender, EventArgs e)
+    {
+        string url = urlbox.Value;
+        ProfilePic.Src = url;
+    }
 }
