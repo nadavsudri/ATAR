@@ -4,9 +4,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="Server">
     <div id="ImageDiv" onclick="document.getElementById('FileUpload').click();">
-        <h2 id="ppheader">Click To Edit</h2>
         <img src="http://www.propertybaazaar.com/images/noprofile.png" id="ProfilePic" />
-        <input type="file" id="FileUpload" style="display: none" />
+        <input type="text" id="urlbox" />
+        <button runat="server" id="uploadbutton" clientidmode="Static">Upload</button>
     </div>
     <header id="afheader" runat="server" clientidmode="Static">
         Hello User

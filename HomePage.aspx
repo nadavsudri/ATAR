@@ -16,7 +16,7 @@
         <iframe class="HomeVideo" width="427" height="240" src="https://www.youtube.com/embed/dgzvl_Oa0w8" frameborder="0" allowfullscreen="false"></iframe>
         <iframe class="HomeVideo2" width="427" height="240" src="https://www.youtube.com/embed/EEGAeVEy5T4" frameborder="0" allowfullscreen></iframe>
         </div>
-        <img id="image" src="Img/Avenged_Sevenfold.jpg" />
+        <img id="image" src="Img/avenged-sevenfold-interview-rolling-stone-a76d4068-eab6-427c-aa71-09ee58aa25de.jpg" />
     
 </asp:Content>
 
