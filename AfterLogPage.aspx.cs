@@ -4,6 +4,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -53,18 +54,25 @@ public partial class AfterLogPage : System.Web.UI.Page
     protected void uploadbutton_ServerClick(object sender, EventArgs e)
     {
         string url = urlbox.Value;
-        if (url != null && url != "")
+        if (CheckImage(url))
         {
-            ProfilePic.Src = url;
-            string query = string.Format("UPDATE [Table] SET url='{0}' WHERE username='{1}';", url, Session["log"].ToString().Substring(0));
-            string connectionstring = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
-            using (SqlConnection connection = new SqlConnection(connectionstring))
-            using (SqlCommand command = new SqlCommand(query, connection))
-            using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+            if (url != null && url != "")
             {
-                connection.Open();
-                command.ExecuteNonQuery();
+                ProfilePic.Src = url;
+                string query = string.Format("UPDATE [Table] SET url='{0}' WHERE username='{1}';", url, Session["log"].ToString().Substring(0));
+                string connectionstring = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
+                using (SqlConnection connection = new SqlConnection(connectionstring))
+                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                {
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
             }
+        }
+        else
+        {
+            Alert("Image not found");
         }
     }
     private void Alert(string message)
@@ -75,5 +83,36 @@ public partial class AfterLogPage : System.Web.UI.Page
     protected void cancelbutton_ServerClick(object sender, EventArgs e)
     {
         urlbox.Value = "";
+    }
+    private bool CheckImage(string url)
+    {
+        HttpWebResponse response = null;
+        HttpWebRequest request = null;
+        try
+        {
+            request = (HttpWebRequest)WebRequest.Create(url);
+            request.Method = "HEAD";
+        }
+        catch
+        {
+            return false;
+        }
+
+        try
+        {
+            response = (HttpWebResponse)request.GetResponse();
+            return true;
+        }
+        catch
+        {
+            return false;
+        }
+        finally
+        {
+            if (response != null)
+            {
+                response.Close();
+            }
+        }
     }
 }
