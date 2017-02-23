@@ -1,7 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +13,7 @@
     <link rel="icon" href="https://pbs.twimg.com/profile_images/542780788400345088/6C-gB4zW.jpeg">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <script src="JavaScript.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -22,7 +22,7 @@
 
     <div class=" Headline">
         <a href="HomePage.aspx">
-            <h1 >Avenged Sevenfold</h1>
+            <h1>Avenged Sevenfold</h1>
         </a>
 
         <div align="center" class="Menu">
@@ -35,7 +35,7 @@
         <div class="Line">
         </div>
         <div class="Line2">
-        </div>
+        </div> 
 
 
     </div>
@@ -44,6 +44,14 @@
         <div>
             <asp:ContentPlaceHolder ID="Body" runat="server">
             </asp:ContentPlaceHolder>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="footer">
+            Avenged Sevenfold Non Offical Fan Page <br />All Rights Reserved®
+        <br />
         </div>
     </form>
 </body>

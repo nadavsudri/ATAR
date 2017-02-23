@@ -437,3 +437,20 @@ hr.hr {
     border: none;
     background-color: #E0E0E0;
 }
+#what {
+    padding:0px;
+    margin:0px;
+    background-color: #616161;
+}
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #616161;
+    text-align: center;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+font-size:10px;
+}
